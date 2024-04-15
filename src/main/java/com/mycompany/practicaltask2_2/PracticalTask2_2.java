@@ -24,7 +24,7 @@ public class PracticalTask2_2 {
             int result = jSONObject.getInt("result_code");
             System.out.println("Result: " + result);
             System.out.println("Type: " + jSONObject.getString("message_type"));
-            System.out.println("Text: " + jSONObject.getString("text"));
+            System.out.println("Text: " + jSONObject.getString("message_text"));
             switch (result) {
                 case 1: //server vernyl dannie
                     JSONArray jSONArray = jSONObject.getJSONArray("task_list");

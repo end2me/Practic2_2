@@ -31,7 +31,7 @@ public class HTTPRunnable implements Runnable {
                     if (i != 0){
                         sbParams.append("&");
                     }
-                    sbParams.append(key).append("-").append(URLEncoder.encode(this.requestBody.get(key), "UTF-8"));
+                    sbParams.append(key).append("=").append(URLEncoder.encode(this.requestBody.get(key), "UTF-8"));
                 } catch (UnsupportedEncodingException e){
                     e.printStackTrace();
                 }
